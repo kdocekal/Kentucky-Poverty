@@ -49,6 +49,5 @@ This mapping process helped me apprechiate the importance of color choice. Here 
 
 ## Final Project Link
 
-Here you are linking from the README.md to the index.html.
 
-Please view the [final map online](https://github.com/kdocekal/Kentucky-Poverty)
+Please view the [final map online](https://kdocekal.github.io/Kentucky-Poverty)
