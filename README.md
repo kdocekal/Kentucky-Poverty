@@ -1,11 +1,6 @@
 # Kentucky-Poverty
 
-
-Across the README.md file, please answer the who, what, when, where, why, and how of the map making process
-
 ## Project Contents
-
-If you wanted to include a table of contents to sections, and then links to each section.
 
 - [Data Source](#data-source)
 - [Project Background](#project-background)
@@ -17,38 +12,43 @@ If you wanted to include a table of contents to sections, and then links to each
 
 ### Data Source
 
-[Link to data source](https://...)
+State and County data can be found here: [Link to US Census data](https://www.census.gov/cgi-bin/geo/shapefiles/index.php)
 
-* Initial Data projection: 
-* Final Map projection:
+Poverty data can be found here: [Link to US Department of Agriculture data](https://www.ers.usda.gov/data-products/county-level-data-sets/county-level-data-sets-download-data)
+
+
+* Initial Data projection: EPSG:4269 - NAD83
+* Final Map projection: EPSG:3089 - NAD83 / Kentucky Single Zone (ftUS)
+
+![final map](images/kyCountyPoverty_1200px.png)
 
 ### Project Background
 
-If you are interested in [other Markdown formatting options](https://www.markdownguide.org/basic-syntax/)
+This map draws from US Census and US Department of Agriculture data to show the distribution of poverty rates by county and urban areas in Kentucky.
 
 ### Purpose
 
-Please write about the map purpose using complete sentences. 
+Providing a geographic represetation of the distribution of poverty rates by county and urban areas in Kentucky enables audiences to observe how poverty is distrubuted across the state and how this distribution aligns with the location of urban areas. This can be helpful for public policy planning as policy officials can use this map to help better understand the environmental conditions and potential proximity to services for Kentucky residents in areas of varying poverty levels.
 
 ### Mapmaking Process
 
-Example of in process map ![in process image](filepath)
-
-You can describe the mapmapking process in this section, including images where it helps to describe the process.
-
-You can also use some lists, and here's some formatting ideas.
-
-1. **Example bold**
-2. *Example italics*
-3. 
-4. 
+1. Download data from above sources and store in your downloads folder.
+![in process image](images/step2.jpg)
+2. Upload census files as a vector layer then transform the poverty .csv file, upload as a deliminated text layer then join to the previous layer. 
+3. Filter for Kentucky. Then edit symbology to create only the Kentucky outline, county outlines, and semi-transparent urban areas.  
+4. Edit fill symbology changing it to a graduated based on percent poverty 2023 with Jenks and select an appropriate color ramp.
+5. Create a new print layout of your desired dimenstions, save the existing map adding a legend, scale bar, compass, title, and description. 
+![in process image](images/step4.jpg)
 
 ### Map Summary
 
-What are the key findings to take from your map and the overall mapmaking process?
+Key findings from my map shows that poverty in Kentucky is most concentrated in eastern counties. We can see that most of these counties are predominantly rural, as they mostly lack large urban areas, especially compared with more northern, central, and western counties. Counties nearest the largest urban areas are shown to have the lowest poverty rates. 
+
+This mapping process helped me apprechiate the importance of color choice. Here picking the right color combination was not only important for clearly representing the relative distribution of poverty in Kentucky but my chosen color gradient had to also be compatible with showing urban areas simultaneously as well. My final choice is a scheme I think represents both clearly as the red of urban areas contrasts well with all colors representing different poverty levels. 
+
 
 ## Final Project Link
 
 Here you are linking from the README.md to the index.html.
 
-Please view the [final map online](www.github...)
+Please view the [final map online](https://github.com/kdocekal/Kentucky-Poverty)
